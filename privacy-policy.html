@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Volkovoice — Privacy Policy</title>
+<meta name="description" content="How the Volkovoice Android app (com.volkovoice) handles speech, translation, conversation history, accounts and advertising.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0B7770">
+<meta property="og:title" content="Privacy Policy — Volkovoice">
+<meta property="og:description" content="What Volkovoice processes, why, and the choices you have.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='11' fill='%230B7770'/%3E%3Cpath fill='%23fff' d='M24,5C13.5,5 5,12.4 5,21.5c0,4.9 2.4,9.3 6.4,12.3l-1.5,7.9c-.1.9.8,1.6 1.6,1.2l7.6-3.6c1.5.3 3.1.5 4.8.5 10.5,0 19-7.4 19-16.5S34.5,5 24,5z'/%3E%3Cpath fill='%230B7770' d='M14,18h20v2.6H14zm0,5h14.5v2.6H14zm0,5h9v2.6h-9z'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --primary:#0B7770; --primary-dark:#075E58; --secondary:#6652C8;
+    --bg:#F7FAFB; --surface:#FFFFFF; --ink:#17222D; --muted:#5C6B78;
+    --line:#DCE6EC; --warn-bg:#FFF7E0; --warn-line:#EBD59B; --warn-ink:#6B4E12;
+    --radius:16px;
+    --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{--bg:#0E1519;--surface:#151F26;--ink:#E9F1F6;--muted:#9FB0BD;--line:#25333D;
+          --warn-bg:#2B2313;--warn-line:#5C4A1E;--warn-ink:#F0D79B;}
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{overflow-x:hidden}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);
+       font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+  a{color:var(--primary);text-underline-offset:2px}
+  a:hover{color:var(--primary-dark)}
+  .skip{position:absolute;left:-9999px}
+  .skip:focus{left:12px;top:12px;background:var(--surface);padding:10px 14px;border-radius:8px;
+              z-index:20;box-shadow:0 2px 10px rgba(0,0,0,.2)}
+
+  /* ---------- header ---------- */
+  header.site{background:linear-gradient(135deg,#0B7770 0%,#075E58 55%,#123C62 100%);color:#fff}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+  .headrow{display:flex;align-items:center;gap:14px;padding:22px 0 4px}
+  .brandmark{width:44px;height:44px;border-radius:13px;background:rgba(255,255,255,.16);
+             border:1px solid rgba(255,255,255,.3);display:flex;align-items:center;
+             justify-content:center;flex:0 0 auto}
+  .brandtext b{display:block;font-size:16px;letter-spacing:-.2px}
+  .brandtext span{font-size:12.5px;opacity:.82}
+  .headtitle{padding:14px 0 34px}
+  .headtitle h1{font-size:clamp(28px,4.4vw,42px);line-height:1.12;letter-spacing:-.8px;margin:0 0 10px}
+  .headtitle p{margin:0;max-width:62ch;color:rgba(255,255,255,.9);font-size:15.5px}
+  .meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+  .meta span{font-size:12.5px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);
+             padding:5px 11px;border-radius:999px}
+
+
+  /* ---------- layout ---------- */
+  main{padding:34px 0 10px}
+  .grid{display:grid;grid-template-columns:250px minmax(0,1fr);gap:34px;align-items:start}
+  @media (max-width:880px){.grid{grid-template-columns:minmax(0,1fr)}nav.toc{position:static;order:2}}
+
+  nav.toc{position:sticky;top:20px;background:var(--surface);border:1px solid var(--line);
+          border-radius:var(--radius);padding:16px 18px;font-size:13.5px}
+  nav.toc h2{font-size:11px;letter-spacing:.9px;text-transform:uppercase;color:var(--muted);
+             margin:0 0 10px}
+  nav.toc ol{margin:0;padding-left:18px;display:grid;gap:6px}
+  nav.toc a{text-decoration:none}
+  nav.toc a:hover{text-decoration:underline}
+
+  article{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+          padding:8px 30px 30px}
+  @media (max-width:560px){article{padding:4px 18px 22px}}
+  article section{padding-top:26px}
+  article section + section{border-top:1px solid var(--line);margin-top:26px}
+  h2.sec{font-size:20px;line-height:1.3;letter-spacing:-.3px;margin:0 0 12px;
+         scroll-margin-top:16px;display:flex;gap:10px;align-items:baseline}
+  h2.sec .num{font-size:13px;font-weight:700;color:var(--primary);background:rgba(11,119,112,.10);
+              border-radius:7px;padding:2px 7px;flex:0 0 auto}
+  h3{font-size:15.5px;margin:22px 0 8px;letter-spacing:-.1px}
+  p{margin:0 0 12px}
+  ul,ol{margin:0 0 14px;padding-left:22px}
+  li{margin-bottom:7px}
+  .lede{font-size:16.5px;color:var(--ink)}
+  .muted{color:var(--muted)}
+  .small{font-size:13.5px}
+
+  /* summary cards */
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px;margin:4px 0 6px}
+  .card{border:1px solid var(--line);border-radius:13px;padding:13px 14px;background:var(--bg)}
+  .card b{display:block;font-size:13.5px;margin-bottom:3px}
+  .card span{font-size:13px;color:var(--muted);line-height:1.5}
+
+  /* tables */
+  .tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px;margin:6px 0 16px}
+  table{border-collapse:collapse;width:100%;font-size:14px;min-width:560px}
+  th,td{text-align:left;padding:10px 13px;vertical-align:top;border-bottom:1px solid var(--line)}
+  th{background:var(--bg);font-size:12px;letter-spacing:.5px;text-transform:uppercase;color:var(--muted)}
+  tr:last-child td{border-bottom:0}
+  td b{font-weight:600}
+
+  /* callouts */
+  .note{border-left:3px solid var(--primary);background:rgba(11,119,112,.06);border-radius:0 12px 12px 0;
+        padding:12px 16px;margin:14px 0;font-size:14.5px}
+  .note.warn{border-color:#C79A00;background:var(--warn-bg);color:var(--warn-ink)}
+
+  /* placeholders that must be replaced before publishing */
+  .ph{background:#FFF3CD;color:#6B4E12;border-bottom:1px dashed #C79A00;border-radius:3px;
+      padding:0 3px;font-weight:600}
+  @media (prefers-color-scheme: dark){.ph{background:#4A3A11;color:#FBEAAB;border-bottom-color:#B08A1E}}
+
+  /* footer */
+  footer.site{border-top:1px solid var(--line);margin-top:34px;padding:26px 0 48px;
+              font-size:13.5px;color:var(--muted)}
+  footer.site .footrow{display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between}
+  footer.site a{color:var(--muted)}
+  footer.site a:hover{color:var(--primary)}
+
+  @media print{
+    :root{--bg:#fff;--surface:#fff;--ink:#000;--muted:#333;--line:#ccc}
+    header.site{background:#fff;color:#000;border-bottom:2px solid #000}
+    .brandmark,.meta,
+    .grid{grid-template-columns:1fr}
+    article{border:0;padding:0}
+    a{color:#000;text-decoration:underline}
+    h2.sec{page-break-after:avoid}
+    section{page-break-inside:avoid}
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#policy">Skip to the policy</a>
+
+<header class="site">
+  <div class="wrap">
+    <div class="headrow">
+      <div class="brandmark" aria-hidden="true">
+        <svg viewBox="0 0 48 48" width="26" height="26">
+          <path fill="#fff" d="M24,5C13.5,5 5,12.4 5,21.5c0,4.9 2.4,9.3 6.4,12.3l-1.5,7.9c-.1.9.8,1.6 1.6,1.2l7.6-3.6c1.5.3 3.1.5 4.8.5 10.5,0 19-7.4 19-16.5S34.5,5 24,5z"/>
+          <path fill="#0B7770" d="M14,18h20v2.6H14zm0,5h14.5v2.6H14zm0,5h9v2.6h-9z"/>
+        </svg>
+      </div>
+      <div class="brandtext">
+        <b>Volkovoice</b>
+        <span>Russian ↔ English voice translation for Android</span>
+      </div>
+    </div>
+    <div class="headtitle">
+      <h1>Privacy Policy</h1>
+      <p>What the Volkovoice Android app processes, why we process it, and the controls you have.
+         This policy applies to the app (package <code>com.volkovoice</code>) and to this website.</p>
+      <div class="meta">
+        <span>Effective: <span data-ph="effective-date">25 October 2026</span></span>
+        <span>Last updated: <span data-ph="updated-date">25 October 2026</span></span>
+        <span>App version 1.1.0</span>
+        <span>Developer: <span data-ph="developer-name">Pascal Aondover</span></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="grid">
+
+    <nav class="toc" aria-label="Contents">
+      <h2>Contents</h2>
+      <ol>
+        <li><a href="#summary">Summary</a></li>
+        <li><a href="#controller">Who is responsible</a></li>
+        <li><a href="#data">Data we process</a></li>
+        <li><a href="#permissions">Device permissions</a></li>
+        <li><a href="#speech">Speech recognition &amp; voices</a></li>
+        <li><a href="#translation">Translation on your device</a></li>
+        <li><a href="#account">Your optional account</a></li>
+        <li><a href="#ads">Advertising</a></li>
+        <li><a href="#thirdparties">Other providers you choose</a></li>
+        <li><a href="#retention">Storage &amp; retention</a></li>
+        <li><a href="#rights">Your rights</a></li>
+        <li><a href="#security">Security</a></li>
+        <li><a href="#children">Children</a></li>
+        <li><a href="#transfers">International transfers</a></li>
+        <li><a href="#changes">Changes</a></li>
+        <li><a href="#website">This website</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ol>
+    </nav>
+
+    <article id="policy">
+
+      <section id="summary">
+        <h2 class="sec"><span class="num">1</span> Summary</h2>
+        <p class="lede">Volkovoice is a Russian ↔ English voice translator. Most of what it does
+          happens on your phone, and you decide which optional features to switch on.</p>
+        <div class="cards">
+          <div class="card"><b>Speech &amp; translation stay local</b>
+            <span>Once the Russian and English language packs are downloaded, translation runs on
+              your device without a connection.</span></div>
+          <div class="card"><b>History is encrypted</b>
+            <span>Saved turns are encrypted with a key held in the Android Keystore. Cloud sync is
+              off unless you sign in and enable it.</span></div>
+          <div class="card"><b>Voice samples never leave the app</b>
+            <span>A recording in Voice Studio stays in app-private storage and does not create a
+              cloned voice.</span></div>
+          <div class="card"><b>Supported by ads</b>
+            <span>Ads are served by Google AdMob. You can change your ad choice at any time in
+              Settings → Ad privacy options.</span></div>
+        </div>
+        <p class="small muted">We do not sell your personal data, and we do not collect your name,
+          contacts, calendar, precise location, photos or health data.</p>
+      </section>
+
+      <section id="controller">
+        <h2 class="sec"><span class="num">2</span> Who is responsible for your data</h2>
+        <p>The data controller for the Volkovoice app and this website is
+          <span data-ph="legal-name">Slogan Technologies Limited</span>
+          (<span data-ph="trading-name">Volkovoice</span>), based in
+          <span data-ph="country">Lagos, Nigeria</span>.
+          You can reach us at <span data-ph="privacy-email"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="25554456464449444a4b414a534057655c444b41405d0b5750">[email&#160;protected]</a></span>
+          for any privacy question or request.</p>
+        <p class="small muted">If you are in the European Economic Area, the UK or Switzerland, we
+          act as the controller for the processing described here. Google acts as an independent
+          controller for the advertising data described in section 8.</p>
+      </section>
+
+      <section id="data">
+        <h2 class="sec"><span class="num">3</span> Data we process</h2>
+        <div class="tablewrap">
+          <table>
+            <thead>
+              <tr><th>Data</th><th>Why</th><th>Where it lives</th><th>Retention</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><b>Microphone audio</b></td>
+                <td>To recognise speech when you tap the microphone or turn on continuous listening
+                  mode</td>
+                <td>Handled in memory by the speech recogniser Android provides; Volkovoice does not
+                  store recordings</td>
+                <td>Discarded once the phrase has been transcribed</td>
+              </tr>
+              <tr>
+                <td><b>Conversation text</b> (what you said and its translation)</td>
+                <td>Core feature: show the transcript, replay, copy, search</td>
+                <td>Encrypted file in app-private storage, protected by an Android Keystore key; the
+                  Room database stores only non-sensitive metadata</td>
+                <td>Until you delete a turn, clear history, or uninstall the app</td>
+              </tr>
+              <tr>
+                <td><b>Voice sample</b> (optional, Voice Studio)</td>
+                <td>So you can record, review and delete your own voice sample locally</td>
+                <td>App-private file on your device</td>
+                <td>Until you delete it or uninstall the app</td>
+              </tr>
+              <tr>
+                <td><b>Account email and authentication data</b> (optional)</td>
+                <td>Sign-in if you choose to create an account; optional cloud sync</td>
+                <td>Google Firebase Authentication; synced turns go to a document in your own
+                  Firestore record, protected by security rules</td>
+                <td>Until you delete your account or ask us to erase it</td>
+              </tr>
+              <tr>
+                <td><b>Settings and preferences</b></td>
+                <td>Remember theme, language pair, speech rate, pitch, formality, accessibility
+                  choices</td>
+                <td>App-private storage, excluded from cloud backup and device transfer</td>
+                <td>Until you clear app data or uninstall</td>
+              </tr>
+              <tr>
+                <td><b>Advertising data</b></td>
+                <td>Serve, cap and measure ads; detect invalid traffic</td>
+                <td>Google AdMob</td>
+                <td>Per Google's retention policies</td>
+              </tr>
+              <tr>
+                <td><b>Crash and diagnostic data</b></td>
+                <td>Only if crash reporting is enabled in your build; used to fix faults</td>
+                <td>Google Firebase Crashlytics, if present</td>
+                <td>Per Google's retention policies</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="small muted">We do not collect your name, contacts, calendar, SMS, call logs,
+          precise location, photos, files or health data. We do not use your data for profiling that
+          produces legal effects.</p>
+      </section>
+
+      <section id="permissions">
+        <h2 class="sec"><span class="num">4</span> Device permissions and what they are for</h2>
+        <div class="tablewrap">
+          <table>
+            <thead><tr><th>Permission</th><th>Purpose</th><th>Required?</th></tr></thead>
+            <tbody>
+              <tr><td><b>Microphone</b> (<code>RECORD_AUDIO</code>)</td>
+                  <td>Speech recognition and, separately, voice sample recording</td>
+                  <td>Optional — you can translate typed text without it</td></tr>
+              <tr><td><b>Internet</b>, <b>network state</b></td>
+                  <td>Optional sign-in, language-pack downloads, ads, a voice provider you configure</td>
+                  <td>Required only for those features; offline translation works without them</td></tr>
+              <tr><td><b>Audio settings</b>, <b>Bluetooth connect</b></td>
+                  <td>Route spoken translations to a Bluetooth headset</td>
+                  <td>Optional</td></tr>
+              <tr><td><b>Vibrate</b></td>
+                  <td>Haptic feedback when listening starts and stops</td>
+                  <td>Optional</td></tr>
+              <tr><td><b>Advertising ID</b> (<code>AD_ID</code>)</td>
+                  <td>Accessed by the Google Mobile Ads SDK, see section 8</td>
+                  <td>Managed by the ads SDK</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>You can revoke any permission in Android <b>Settings → Apps → Volkovoice → Permissions</b>.
+          Revoking the microphone disables voice input but not typed translation.</p>
+      </section>
+
+      <section id="speech">
+        <h2 class="sec"><span class="num">5</span> Speech recognition and spoken output</h2>
+        <h3>Recognition</h3>
+        <p>Volkovoice does not contain its own speech recogniser. It hands audio to the recognition
+          service Android has configured on your device, which is usually provided by Google or by
+          your device manufacturer. That service may process the audio on your device or transmit it
+          to its own provider, under <em>that</em> provider's privacy policy — not ours.
+          <b>Volkovoice does not save or upload your recordings.</b></p>
+        <p>The app asks for your confirmation before the first continuous-listening session, because
+          that mode keeps the microphone active until you stop it.</p>
+        <h3>Spoken output</h3>
+        <p>Translations are spoken by the text-to-speech engine installed on your device. Some
+          voices are marked as "network"; if the engine reports that it needs a connection, the app
+          shows a separate confirmation before sending any text to it. Without such a consent the app
+          uses an on-device voice or stays silent.</p>
+      </section>
+
+      <section id="translation">
+        <h2 class="sec"><span class="num">6</span> Translation on your device</h2>
+        <p>Translation is performed by Google ML Kit's on-device translation models. Downloaded
+          Russian and English language packs are stored in app-private storage. Downloading a pack
+          requires a network connection (Wi-Fi by preference); the text you translate is processed
+          locally and is not sent to Google for translation. Removing the packs in
+          <b>Settings → Local data</b> reclaims that storage.</p>
+      </section>
+
+      <section id="account">
+        <h2 class="sec"><span class="num">7</span> Your optional account</h2>
+        <p>You can use Volkovoice without an account. If you create one, we use
+          <b>Google Firebase Authentication</b> to process your email address and authentication
+          details (such as a hashed credential and verification status). We use it only to sign you
+          in, to secure your account and, if you switch it on, to sync conversation turns between your
+          own devices.</p>
+        <ul>
+          <li>We never ask for your name, phone number or postal address to create an account.</li>
+          <li>Synced turns are stored in <em>your</em> record, protected by Firestore security rules
+              so that other users cannot read them.</li>
+          <li>Cloud sync is off by default and can be turned off again at any time.</li>
+        </ul>
+        <h3>Deleting your account</h3>
+        <div class="note"><b>Two ways to delete it.</b><br>
+          <b>1. In the app (fastest):</b> open Volkovoice → <b>Settings → Account → Delete Firebase
+          account</b> → re-enter your password → confirm. The account is removed immediately.<br>
+          <b>2. By email:</b> write to <span data-ph="privacy-email"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="becedfcddddfd2dfd1d0dad1c8dbccfec7dfd0dadbc690cccb">[email&#160;protected]</a></span>
+          from the address on the account, with the subject <em>Account deletion request</em>. We may ask
+          you to confirm from that same address; verified requests are completed within 30 days.<br>
+          <b>What is deleted:</b> the authentication record (email, credentials, verification status)
+          and any conversation turns synced to it. <b>What is not:</b> data stored only on your device —
+          erase that with <b>Settings → Local data → Delete all local data</b>, or by uninstalling the
+          app. Temporary deactivation or "freezing" is never offered in place of deletion.</div>
+        <p>You can also request deletion without the app. You may also request deletion without the app using our
+          address below, or follow the two steps in <a href="#account">this section</a> — you
+          can also write to
+          <span data-ph="privacy-email"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="1868796b7b79747977767c776e7d6a586179767c7d60366a6d">[email&#160;protected]</a></span>. We delete the
+          authentication record and any synced turns within <b>30 days</b> of a verified request.
+          Deleting the account does not delete data stored only on your device — clear that in the
+          app or by uninstalling it.</p>
+      </section>
+
+      <section id="ads">
+        <h2 class="sec"><span class="num">8</span> Advertising</h2>
+        <p>Volkovoice is free and supported by ads served by <b>Google AdMob</b>. The app shows a
+          banner on the main screens and, occasionally, a full-screen ad after a translation is
+          completed. Interstitials are rate limited (at least three translations apart and at least
+          60 seconds between them) and never appear while you are listening, signing in, recording a
+          voice sample or inside Settings.</p>
+        <ul>
+          <li><b>Consent first.</b> Where the law requires it (EEA, UK, Switzerland), the app runs
+              Google's User Messaging Platform consent flow before any ad is requested. If you decline
+              personalised advertising, ads are still shown but are non-personalised.</li>
+          <li><b>What the ads SDK may access.</b> Your device's advertising ID, IP address,
+              coarse/derived location from the IP, and app and device information, in order to deliver
+              and cap ads, measure their performance and detect invalid traffic. Google describes this
+              in <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">How
+              Google uses information from sites or apps that use our services</a>.</li>
+          <li><b>Change your choice.</b> <b>Settings → Ad privacy options</b> reopens the consent form
+              whenever your region requires one. You can also reset or delete your advertising ID in
+              Android <b>Settings → Privacy → Ads</b>.</li>
+          <li><b>We do not sell your data.</b> We do not share personal data with advertisers beyond
+              what the ads SDK does as described above.</li>
+        </ul>
+        <div class="note">Because Volkovoice is not directed at children, ads are not configured for
+          child-directed treatment. If you believe a child is using the app, see section 13.</div>
+      </section>
+
+      <section id="thirdparties">
+        <h2 class="sec"><span class="num">9</span> Other providers you choose to enable</h2>
+        <p>Two integrations are disabled unless <em>you</em> configure them:</p>
+        <ul>
+          <li><b>A third-party voice provider</b> (for example ElevenLabs). If you paste an API key in
+              Settings, text and any voice sample you use with that feature are sent to that provider
+              under its terms and privacy policy; the key is stored in app-private preferences on your
+              device. Without a key this feature stays off.</li>
+          <li><b>Cloud sync</b> through Firebase, described in section 7.</li>
+        </ul>
+        <p>If you enable voice cloning with a third-party provider, you are responsible for having the
+          speaker's permission and for complying with that provider's terms.</p>
+      </section>
+
+      <section id="retention">
+        <h2 class="sec"><span class="num">10</span> How long we keep data, and how to delete it</h2>
+        <div class="tablewrap">
+          <table>
+            <thead><tr><th>Data</th><th>Kept for</th><th>How to delete</th></tr></thead>
+            <tbody>
+              <tr><td>Conversation history (device)</td><td>Until you delete it</td>
+                  <td>Trash icon on a turn, or <b>Settings → Local data → Delete all local data</b></td></tr>
+              <tr><td>Voice sample (device)</td><td>Until you delete it</td>
+                  <td><b>Voice Studio → Delete sample</b></td></tr>
+              <tr><td>Language packs (device)</td><td>Until you remove them</td>
+                  <td><b>Settings → Local data → Delete models</b></td></tr>
+              <tr><td>Preferences (device)</td><td>Until you clear app data</td>
+                  <td>Uninstall the app or clear its storage in Android settings</td></tr>
+              <tr><td>Account email and synced turns (Firebase)</td><td>Until you delete the account</td>
+                  <td>In-app account deletion, or email us (see section 7); erased within 30 days</td></tr>
+              <tr><td>Advertising data (Google)</td><td>Per Google's policies</td>
+                  <td>Reset or delete the advertising ID in Android settings</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Uninstalling the app removes all local files and destroys the Keystore key, which makes any
+          leftover encrypted history unreadable.</p>
+      </section>
+
+      <section id="rights">
+        <h2 class="sec"><span class="num">11</span> Your rights</h2>
+        <p>Depending on where you live, you may have some or all of the following rights. We honour
+          these requests regardless of your location.</p>
+        <ul>
+          <li><b>Access and portability</b> — ask what we hold about you and receive a copy.</li>
+          <li><b>Correction</b> — have inaccurate data corrected.</li>
+          <li><b>Erasure</b> — have your account and synced data deleted.</li>
+          <li><b>Restriction and objection</b> — limit or object to certain processing, including
+              personalised advertising.</li>
+          <li><b>Withdraw consent</b> — at any time, in the app (ad consent, microphone permission) or
+              by contacting us. Withdrawal does not affect processing already carried out.</li>
+          <li><b>Complain</b> — to your local data-protection authority. If you are in Nigeria, that is
+              the Nigeria Data Protection Commission; in the EU/UK, your national supervisory
+              authority.</li>
+        </ul>
+        <p>Most data lives only on your device, so the quickest erasure is in the app or by
+          uninstalling. For anything we hold on our side, email
+          <span data-ph="privacy-email"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="0b7b6a78686a676a64656f647d6e794b726a656f6e7325797e">[email&#160;protected]</a></span> — we answer within
+          <b>30 days</b>. We may ask you to verify that you control the account before acting.</p>
+        <p class="small muted"><b>California residents:</b> we do not sell or share personal
+          information for cross-context behavioural advertising outside the consent choices described
+          in section 8, and we will not discriminate against you for exercising your rights.
+          <b>Nigeria:</b> we process personal data in line with the Nigeria Data Protection Act 2023.</p>
+      </section>
+
+      <section id="security">
+        <h2 class="sec"><span class="num">12</span> Security</h2>
+        <ul>
+          <li>Conversation history is encrypted with AES-GCM using a random key stored in the Android
+              Keystore. The key is non-exportable and never leaves your device.</li>
+          <li>Sensitive files are excluded from Android cloud backup and device-to-device transfer.</li>
+          <li>All network traffic uses HTTPS, and Firestore access is restricted by security rules so
+              that an account can only read its own record.</li>
+          <li>No system is perfect. If you find a vulnerability, please report it to
+              <span data-ph="security-email"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c0b0a1b3a3a1aca1afaea4afb6a5b280b9a1aea4a5b8eeb2b5">[email&#160;protected]</a></span> rather than
+              disclosing it publicly, and we will investigate.</li>
+        </ul>
+      </section>
+
+      <section id="children">
+        <h2 class="sec"><span class="num">13</span> Children</h2>
+        <p>Volkovoice is not directed at children under 13 (or under the minimum age in your country).
+          We do not knowingly collect data from children. If you believe a child has used the app,
+          contact us at <span data-ph="privacy-email"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a5d5c4d6c6c4c9c4cacbc1cad3c0d7e5dcc4cbc1c0dd8bd7d0">[email&#160;protected]</a></span> and we
+          will delete any associated data.</p>
+      </section>
+
+      <section id="transfers">
+        <h2 class="sec"><span class="num">14</span> International transfers</h2>
+        <p>Google (Firebase, ML Kit, AdMob) and any voice provider you configure may process data in
+          countries other than yours, including the United States, using their standard contractual
+          safeguards. On-device features — offline translation, local history, local voice samples —
+          involve no transfer at all.</p>
+      </section>
+
+      <section id="changes">
+        <h2 class="sec"><span class="num">15</span> Changes to this policy</h2>
+        <p>We update this page when our practices change and revise the "Last updated" date above.
+          Material changes are announced in the app's release notes on Google Play. Continuing to use
+          the app after an update means you accept the revised policy.</p>
+      </section>
+
+
+      <section id="website">
+        <h2 class="sec"><span class="num">16</span> This website</h2>
+        <p>This page is a static document. It exists only to publish this policy, so it is
+          deliberately built to collect nothing:</p>
+        <ul>
+          <li><b>No cookies and no local storage.</b> The page sets none, and asks for none.</li>
+          <li><b>No analytics, trackers, pixels or advertising</b> on this site. The ads described in
+              section 8 are served inside the Android app, not here.</li>
+          <li><b>No accounts, forms or comments.</b> There is nothing to sign up for and nothing to
+              submit, so the site itself stores no personal data about you.</li>
+          <li><b>No third-party requests.</b> Fonts, icons and styles are embedded in the file, so
+              opening the page does not contact any other service.</li>
+        </ul>
+        <h3>Hosting logs</h3>
+        <p>Like any website, this page is delivered by a hosting provider, which processes standard
+          technical data in order to serve and secure it: your IP address, the requested URL, the time,
+          your browser's user-agent string and the HTTP status. That data is generated by the host, not
+          by this page, is kept for a short period for security and abuse prevention, and is not used to
+          identify or profile you. Our hosting provider acts as a data processor for this purpose and
+          publishes its own privacy policy describing its practices.</p>
+        <h3>Links to other sites</h3>
+        <p>Where this page links to Google's policies, or to any other site, that site's own privacy
+          policy applies once you follow the link. We are not responsible for the content or practices
+          of sites we do not operate.</p>
+        <h3>Changes to this page</h3>
+        <p>Any edit changes the "Last updated" date at the top of this page. The version you are reading
+          is the current, authoritative one.</p>
+      </section>
+
+      <section id="contact">
+        <h2 class="sec"><span class="num">17</span> Contact</h2>
+        <div class="tablewrap">
+          <table>
+            <tbody>
+              <tr><th>Legal entity</th>
+                  <td><span data-ph="legal-name">Slogan Technologies Limited</span></td></tr>
+              <tr><th>Play Store developer name</th>
+                  <td><span data-ph="developer-name">Pascal Aondover</span></td></tr>
+              <tr><th>Privacy requests</th>
+                  <td><span data-ph="privacy-email"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="2858495b4b49444947464c475e4d5a685149464c4d50065a5d">[email&#160;protected]</a></span></td></tr>
+              <tr><th>Security reports</th>
+                  <td><span data-ph="security-email"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="3e4e5f4d5d5f525f51505a51485b4c7e475f505a5b46104c4b">[email&#160;protected]</a></span></td></tr>
+              <tr><th>Postal address</th>
+                  <td><span data-ph="postal-address">Lagos, Nigeria</span></td></tr>
+              <tr><th>Account deletion</th>
+                  <td>Settings → Account → Delete Firebase account, or email the address above</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="small muted">This policy is provided in English. If we publish translations, the
+          English version prevails where the two differ.</p>
+      </section>
+
+    </article>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap footrow">
+    <span>© <span data-ph="year">2026</span>
+      <span data-ph="legal-name">Slogan Technologies Limited</span> · Volkovoice</span>
+    <span><a href="#account">Account deletion</a> · <a href="#website">This website</a> ·
+      <a href="#policy">Back to top</a></span>
+  </div>
+</footer>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a502630e7c0f654f',t:'MTc5Mjk0MzUzMQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
